@@ -1,11 +1,11 @@
-from googletrans import Translator
+from deep_translator import GoogleTranslator
+from src.settings import LANGUAGE
 
-class TranslatorBase:
+class VocabularyTranslator:
     def __init__(self):
-        self.translator = Translator()
+        self.translator = GoogleTranslator(source='fr', target=LANGUAGE)
 
-    def translate(self, word, source_language="fr", target_language="en"):
-        translation = self.translator.translate(word, src=source_language, dest=target_language)
-        return translation.text
-    
-
+    def translate(self, word):
+        translation = self.translator.translate(word)
+        print(translation)
+        return translation

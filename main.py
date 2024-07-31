@@ -4,7 +4,7 @@ from src.llm import Llm
 from src.utils import answer_to_list
 from src.database import VocabularyDatabase
 from src.image import ImageGenerator
-from src.translator import TranslatorBase
+from src.translator import VocabularyTranslator
 
 
 class Main:
@@ -12,7 +12,7 @@ class Main:
         self.llm = Llm()
         self.db = VocabularyDatabase()
         self.image_generator = ImageGenerator()
-        self.translator = TranslatorBase()
+        self.translator = VocabularyTranslator()
 
     def show_database(self):
         entries = self.db.get_all_entries()
@@ -29,7 +29,7 @@ class Main:
 
         for word in words:
             print(f"Generating image for {word}")
-            translation = self.translator.translate(word, source_language="fr", target_language=LANGUAGE)
+            translation = self.translator.translate(word)
             image_data = self.image_generator.fetch_image(word)
             path = image_data["path"]
             self.db.add_entry(path, word, translation, theme)
