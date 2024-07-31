@@ -1,5 +1,4 @@
 import sqlite3
-from typing import List, Tuple
 
 class VocabularyDatabase:
     def __init__(self, db_name: str = "vocabulary.db"):
@@ -31,13 +30,13 @@ class VocabularyDatabase:
         ''', (image, word, translation, theme))
         self.conn.commit()
 
-    def get_entry(self, word: str) -> Tuple[int, str, str, str, str]:
+    def get_entry(self, word: str):
         self.cursor.execute('''
             SELECT * FROM vocabulaire WHERE word = ?
         ''', (word,))
         return self.cursor.fetchone()
 
-    def get_all_entries(self) -> List[Tuple[int, str, str, str, str]]:
+    def get_all_entries(self):
         self.cursor.execute('SELECT * FROM vocabulaire')
         return self.cursor.fetchall()
 
