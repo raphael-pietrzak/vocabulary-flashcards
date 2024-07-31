@@ -15,6 +15,8 @@ The Vocabulary Flash Card Generator is an application that utilizes AI to genera
 
 - Python 3.6 or higher (https://www.python.org/)
 - LimeWire API key  (https://limewire.com/)
+- Ollama run model
+- SQLite3
 
 
 ## Installation
