@@ -22,6 +22,8 @@ The Vocabulary Flash Card Generator is an application that utilizes AI to genera
 Follow these steps to set up and run the Vocabulary Flash Card Generator:
 
 ```bash
+git clone 'https://github.com/raphael-pietrzak/vocabulary-flashcards.git'
+cd vocabulary-flashcards
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
