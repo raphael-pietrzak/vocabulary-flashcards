@@ -38,7 +38,7 @@ deepdiff==7.0.1
 Deprecated==1.2.14
 dirtyjson==1.0.8
 diskcache==5.6.3
-distlib @ file:///private/tmp/python-distlib-20231124-5066-1l1cue/distlib-0.3.7
+distlib
 distro==1.9.0
 dnspython==2.6.1
 duckdb==0.10.2
@@ -49,7 +49,7 @@ entrypoint2==1.1
 executing==2.0.1
 fastapi==0.111.0
 fastapi-cli==0.0.4
-filelock @ file:///private/tmp/python-filelock-20231112-5412-u6v39j/filelock-3.13.1/dist/filelock-3.13.1-py3-none-any.whl#sha256=57dbda9b35157b05fb3e58ee91448612eb674172fab98ee235ccb0b5bee19a1c
+filelock
 filetype==1.2.0
 Flask==3.0.0
 Flask-SQLAlchemy==3.1.1
@@ -160,7 +160,7 @@ pandas==2.2.0
 parso==0.8.4
 pexpect==4.9.0
 Pillow==10.1.0
-platformdirs @ file:///private/tmp/python-platformdirs-20231204-5228-f28h82/platformdirs-4.1.0
+platformdirs
 posthog==3.5.0
 prompt-toolkit==3.0.43
 protobuf==4.23.4
